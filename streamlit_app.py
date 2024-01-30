@@ -1,5 +1,3 @@
-import os
-import dotenv
 import streamlit as st
 from llm_functions import run_llm, get_cover_letter, get_resume_improvements
 
