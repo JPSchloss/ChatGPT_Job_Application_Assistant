@@ -9,5 +9,4 @@ bs4==0.0.1
 requests==2.31.0
 tiktoken==0.5.2
 chromadb
-sqlite3
 sqlalchemy
