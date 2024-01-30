@@ -72,11 +72,11 @@ def main():
       if openai_api_key != '' and openai_api_key.startswith('sk-'):
         if text != '':
           if files != None:
-            try:
+            #try:
               with st.spinner('Please wait for the model to load. This may take a minute...'):
                 generate_response(text, files, model, openai_api_key, temperature, cv_improvements, cover_letter)
-            except:
-               st.error('An Error Occured With The Model! Please Try Again', icon="🚨")
+            # except:
+            #    st.error('An Error Occured With The Model! Please Try Again', icon="🚨")
           else:
              st.warning('There may be a problem. Please Check Your Uploaded File.', icon='⚠')
         else:
