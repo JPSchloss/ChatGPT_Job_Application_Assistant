@@ -1,6 +1,10 @@
 import streamlit as st
 from llm_functions import run_llm, get_cover_letter, get_resume_improvements
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 model = 'gpt-3.5-turbo-1106'
 
 def generate_response(url, cv, model, openai_api_key, temperature, cv_improvements, cover_letter):
