@@ -24,7 +24,7 @@ def generate_response(url, cv, model, openai_api_key, temperature, cv_improvemen
   return
   
 
-def main(model, openai_api_key):
+def main():
 
   try:
      # Retrieve the OpenAI API key from the environment variable
