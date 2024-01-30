@@ -45,9 +45,6 @@ def main(model, openai_api_key):
   
   st.sidebar.subheader('Set Model Temperature:')
   temperature = st.sidebar.slider("Model Temperature", 0.0, 2.0, step=0.1, value=0.3)
-
-  logo_url = ''
-  #st.image(logo_url, width=100)
   
   st.title('Job Application Assistant')
   st.markdown(''' \
